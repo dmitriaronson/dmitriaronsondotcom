@@ -9,12 +9,12 @@ jobs:
   trigger-deployment:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      id-token: write
     steps:
       - name: Trigger VPS Playbook Workflow
         uses: peter-evans/repository-dispatch@v2
         with:
-          # token: ${{ secrets.PAT }}
+          token: ${{ secrets.PAT }}
           repository: dmitriaronson/vps-playbook
           event-type: deploy-dmitriaronsoncom
           client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
