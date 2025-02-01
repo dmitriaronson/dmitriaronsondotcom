@@ -1,0 +1,16 @@
+{
+  "name": "dmitriaronson.com",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "parcel build src/index.html",
+    "dev": "parcel src/index.html"
+  },
+  "author": "Dmitri Aronson",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "parcel": "^2.13.3"
+  },
+  "dependencies": {
+    "modern-normalize": "^3.0.1"
+  }
+}

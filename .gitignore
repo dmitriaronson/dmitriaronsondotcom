@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build outputs
+dist/
+.parcel-cache/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE and editor files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Debug logs
+npm-debug.log*
+debug.log
+
+# Optional: System Files
+*.log
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Optional: Temporary files
+*.tmp
+*.temp
+.cache/
