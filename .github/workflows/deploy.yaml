@@ -14,5 +14,5 @@ jobs:
         with:
           token: ${{ secrets.PAT_TOKEN }}
           repository: dmitriaronson/vps-playbook
-          event-type: deploy-trigger
+          event-type: deploy-dmitriaronsoncom
           client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
