@@ -1,0 +1,19 @@
+---
+- name: Deploy
+  hosts: vps
+  remote_user: "{{ username }}"
+  become: true
+  tasks:
+    - name: Create and chown website dir
+      file:
+        path: "/var/www/website"
+        state: directory
+        mode: 0755
+
+    - name: Upload dist folder contents
+      become: true
+      copy:
+        src: "./dist/"
+        dest: "/var/www/website/"
+        remote_src: no
+        mode: 0644
